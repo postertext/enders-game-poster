@@ -7,21 +7,23 @@ function startTimer(duration, display) {
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
         
-        for (i = 0; i < display.length; ++i) {
-            display[i].textContent = minutes + ":" + seconds;
+        if (timer > 0) {
+            for (i = 0; i < display.length; ++i) {
+                display[i].textContent = minutes + ":" + seconds;
+            }
         }
 
         if (--timer < 0) {
             for (i = 0; i < hurryTxt.length; ++i) {
-                display[i].textContent = "stopped";
-//                hurryTxt[i].textContent = "Free shipping offer extended! Buy now before it's too late!";
+//                display[i].textContent = "stopped";
+                hurryTxt[i].textContent = "Free shipping offer extended! Buy now before it's too late!";
             }
         }
     }, 1000);
 }
 
 window.onload = function () {
-    var thirtyFiveMinutes = 60 * 1;
+    var thirtyFiveMinutes = 60 * 0.2;
     var hurryTxt = document.querySelectorAll('.hurry-txt'), i;
     var display = document.querySelectorAll('.time'), i;
     
