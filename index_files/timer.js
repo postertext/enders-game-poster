@@ -21,5 +21,5 @@ window.onload = function () {
     var thirtyFiveMinutes = 60 * 35;
     var display = document.querySelectorAll('.time'), i;
     
-    startTimer(fiveMinutes, display);
+    startTimer(thirtyFiveMinutes, display);
 };
