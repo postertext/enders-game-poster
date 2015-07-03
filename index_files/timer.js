@@ -20,7 +20,7 @@ function startTimer(duration, display) {
 }
 
 window.onload = function () {
-    var thirtyFiveMinutes = 60 * 35;
+    var thirtyFiveMinutes = 60 * 1;
     var hurryTxt = document.querySelectorAll('.hurry-txt'), i;
     var display = document.querySelectorAll('.time'), i;
     
