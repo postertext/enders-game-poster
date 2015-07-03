@@ -17,6 +17,6 @@ function startTimer(duration, display) {
 
 window.onload = function () {
     var thirtyfiveMinutes = 60 * 35,
-        display = document.querySelector('#time');
+        display = document.querySelector('.time');
     startTimer(thirtyfiveMinutes, display);
 };
