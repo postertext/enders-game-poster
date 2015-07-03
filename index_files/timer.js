@@ -12,13 +12,16 @@ function startTimer(duration, display) {
         }
 
         if (--timer < 0) {
-            timer = duration;
+            for (i = 0; i < hurryTxt.length; ++i) {
+                hurryTxt[i].textContent = "Free shipping offer extended! Buy now before it's too late!";
+            }
         }
     }, 1000);
 }
 
 window.onload = function () {
     var thirtyFiveMinutes = 60 * 35;
+    var hurryTxt = document.querySelectorAll('.hurry-txt'), i;
     var display = document.querySelectorAll('.time'), i;
     
     startTimer(thirtyFiveMinutes, display);
