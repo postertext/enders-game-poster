@@ -1,4 +1,4 @@
-function startTimer(duration, display) {
+function startTimer(duration, display, hurryTxt) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
         minutes = parseInt(timer / 60, 10)
@@ -27,5 +27,5 @@ window.onload = function () {
     var hurryTxt = document.querySelectorAll('.hurry-txt'), i;
     var display = document.querySelectorAll('.time'), i;
     
-    startTimer(thirtyFiveMinutes, display);
+    startTimer(thirtyFiveMinutes, display, hurryTxt);
 };
