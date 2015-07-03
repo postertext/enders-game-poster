@@ -13,7 +13,8 @@ function startTimer(duration, display) {
 
         if (--timer < 0) {
             for (i = 0; i < hurryTxt.length; ++i) {
-                hurryTxt[i].textContent = "Free shipping offer extended! Buy now before it's too late!";
+                display[i].textContent = "stopped";
+//                hurryTxt[i].textContent = "Free shipping offer extended! Buy now before it's too late!";
             }
         }
     }, 1000);
