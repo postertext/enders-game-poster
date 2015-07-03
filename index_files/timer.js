@@ -15,7 +15,6 @@ function startTimer(duration, display, hurryTxt) {
 
         if (--timer < 0) {
             for (i = 0; i < hurryTxt.length; ++i) {
-//                display[i].textContent = "stopped";
                 hurryTxt[i].textContent = "Free shipping offer extended! Buy now before it's too late!";
             }
         }
@@ -23,7 +22,7 @@ function startTimer(duration, display, hurryTxt) {
 }
 
 window.onload = function () {
-    var thirtyFiveMinutes = 60 * 0.2;
+    var thirtyFiveMinutes = 60 * 35;
     var hurryTxt = document.querySelectorAll('.hurry-txt'), i;
     var display = document.querySelectorAll('.time'), i;
     
