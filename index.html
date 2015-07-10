@@ -14,6 +14,7 @@
       <meta name="generator" content="Webflow">
       <link rel="stylesheet" type="text/css" href="./index_files/enders-game-poster.css">
       <script src="./index_files/webfont.js"></script>
+      <script src="jquery.scrolldepth.min.js"></script>
       <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic">
       <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic">               <script>WebFont.load({
          google: {
@@ -25,6 +26,20 @@
       <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/558e073a777d78fc7ddcd6a1/558fa57977ce56cf3faf262f_32x32-logo-emblem.png">
       <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/558e073a777d78fc7ddcd6a1/558fa5c177ce56cf3faf2632_300x300-Postertext-Logo---stack.png">
 	  <script>
+      jQuery(function() {
+          jQuery.scrollDepth(
+              {elements: ['#for-fans',
+                            '#legible-text',
+                            '#book-coverage',
+                            '#true-to-novel',
+                            '#featured-in',
+                            '#testimonials',
+                            '#buy-bottom',
+                            '#about']}
+          );
+      });
+      </script>
+      <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -40,7 +55,7 @@
             <div class="w-row header-row">
                <div class="w-col w-col-6 logo-img-column"><a class="w-inline-block" href="http://postertext.com/" target="_blank"><img class="header-logo" src="./index_files/postertext-logo.png" width="280"></a></div>
                <div class="w-col w-col-6 w-clearfix contact-block-wrapper">
-                  <a class="w-inline-block contact-block" href="mailto:inquiry@postertext.com">
+                  <a class="w-inline-block contact-block" href="mailto:inquiry@postertext.com" onClick="ga('send','event','Email','click to email - top','inquiry@postertext.com')">
                      <div>24/7&nbsp;&nbsp;| &nbsp;inquiry@postertext.com&nbsp;</div>
                   </a>
                </div>
@@ -69,7 +84,7 @@
 -->
                   </div>
                   <div class="w-col w-col-6 hero-img-column">
-                     <a class="w-lightbox w-inline-block" href="/#" data-ix="hover-over-hero-image">
+                     <a class="w-lightbox w-inline-block" href="/#" data-ix="hover-over-hero-image" onClick="ga('send', 'pageview', '/virtual/product-img/hero');">
                         <div class="hero-img-wrapper">
                            <div class="hero-img-bg"></div>
                            <img class="hero-img" src="./index_files/Enders-Game-SD.gif" alt="Ender&#39;s Game poster - Postertext" width="315">
@@ -100,7 +115,7 @@
             </div>
          </div>
       </div>
-      <div class="w-section value-prop-wrapper">
+      <div class="w-section value-prop-wrapper" id="for-fans">
          <div class="w-container">
             <h3 class="value-prop-text">An art print for fans of Orson Scott Card’s<br><strong><em class="value-prop-book">Ender’s Game</em></strong></h3>
          </div>
@@ -118,10 +133,10 @@
          <div class="w-container">
             <div class="w-row">
                <div class="w-col w-col-6 empty-column"></div>
-               <div class="w-col w-col-6 right-column first-value-column">
+               <div class="w-col w-col-6 right-column first-value-column" id="legible-text">
                   <h2>Legible Text</h2>
                   <div>Text size is perfectly legible for someone with average eyesight.<br><br>If you can read the ingredients list on product packagings, then you can read our text.</div>
-                  <a class="w-lightbox w-inline-block" href="/#">
+                  <a class="w-lightbox w-inline-block" href="/#" onClick="ga('send', 'pageview', '/virtual/product-img/see-more-text');">
                      <div class="link">Click here to see more text.</div>
                      <script type="application/json" class="w-json">{ "items": [{
                         "url": "https://daks2k3a4ib2z.cloudfront.net/558e073a777d78fc7ddcd6a1/55920956654c69dc323a8fef_enders-game-zoom-text.png",
@@ -143,7 +158,7 @@
          <div class="w-container">
             <div class="w-row">
                <div class="w-col w-col-6 left-column pen-book-poster-column"><img class="pen-book-poster-img" src="./index_files/pen-book-poster.png"></div>
-               <div class="w-col w-col-6 right-column">
+               <div class="w-col w-col-6 right-column" id="book-coverage">
                   <h2>Book Coverage</h2>
                   <div>Words from the first 13 chapters of the novel is used to create this stunning and elegant print.</div>
                </div>
@@ -166,7 +181,7 @@
                      <li class="value-list">100% money-back guarantee</li>
                   </ul>
                </div>
-               <div class="w-col w-col-6 right-column">
+               <div class="w-col w-col-6 right-column" id="true-to-novel">
                   <h2>True to the Novel</h2>
                   <div>The famous and futuristic words of Orson Scott Card’s <em>Ender’s Game</em> are transformed here to
                      reveal a portrait of the young protagonist Ender Wiggins, lost in the solitude
@@ -177,14 +192,14 @@
          </div>
       </div>
       <div class="w-section divider"></div>
-      <div class="w-section featured-wrapper">
+      <div class="w-section featured-wrapper" id="featured-in">
          <div class="w-container">
             <h2 class="featured-in-header">Featured In</h2>
             <div class="featured-logos"><img class="featured-img" src="./index_files/gq.png" alt="gq-logo"><img class="featured-img" src="./index_files/wired.png"><img class="featured-img" src="./index_files/fab.png"><img class="featured-img" src="./index_files/io9.png"><img class="featured-img" src="./index_files/dwell.png"><img class="featured-img" src="./index_files/galleycat.png"><img class="featured-img" src="./index_files/uncrate.png"><img class="featured-img" src="./index_files/newyork.png"><img class="featured-img" src="./index_files/notcot.png"><img class="featured-img" src="./index_files/harvard.png"></div>
          </div>
       </div>
       <div class="w-section divider"></div>
-      <div class="w-section testimonials-wrapper">
+      <div class="w-section testimonials-wrapper" id="testimonials">
          <div class="w-container">
             <h2 class="testimonials-header">Testimonials</h2>
             <div class="w-row testimonials-row">
@@ -209,7 +224,7 @@
          </div>
       </div>
       <div class="w-section divider"></div>
-      <div class="w-section buy-wrapper">
+      <div class="w-section buy-wrapper" id="buy-bottom">
          <div class="divider-buy buy-bottom"></div>
          <div class="w-container last-product-container"><img class="hero-img last-product-img" src="./index_files/Enders-Game-SD.gif" alt="Ender&#39;s Game book poster - Postertext" width="150"></div>
          <div class="price-txt">$29.95</div>
@@ -225,7 +240,7 @@
             <img src="./index_files/payment-logos.png" width="122">
          </div>
       </div>
-      <div class="w-section about-wrapper">
+      <div class="w-section about-wrapper" id="about">
          <div class="w-row">
             <div class="w-col w-col-7 about-column">
                <h2 class="about-h2">About Our Company</h2>
@@ -251,7 +266,7 @@
       </div>
       <div class="w-section modal-background-returns">
          <div class="modal-window-returns">
-            <a class="w-clearfix w-inline-block" href="http://enders-game-poster.webflow.io/#">
+            <a class="w-clearfix w-inline-block" href="http://enders-game-poster.webflow.io/#" onClick="ga('send','pageview', '/virtual/footer/returns');">
                <div class="close-modal link">CLOSE</div>
             </a>
             <h4 class="modal-header">RETURNS &amp;&nbsp;EXCHANGES</h4>
@@ -260,7 +275,7 @@
       </div>
       <div class="w-section modal-background-terms">
          <div class="modal-window-terms">
-            <a class="w-inline-block" href="http://enders-game-poster.webflow.io/#">
+            <a class="w-inline-block" href="http://enders-game-poster.webflow.io/#" onClick="ga('send','pageview', '/virtual/footer/terms');">
                <div class="close-modal link top">CLOSE</div>
             </a>
             <h4 class="modal-header">policy &amp; terms</h4>

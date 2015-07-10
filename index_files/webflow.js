@@ -233,7 +233,7 @@ module.exports = function($, _) {
     data.open = false;
     var config = data.config;
     ix.outro(0, data.el[0]);
-
+      
     // Stop listening for tap outside events
     $doc.off('tap' + namespace, data.outside);
 
