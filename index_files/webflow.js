@@ -1580,7 +1580,7 @@ function createLightbox(window, document, $, undefined) {
       .add('opacity .3s')
       .start({opacity: 0})
       .then(hideLightbox);
-
+      ga('send', 'pageview'); //pkedit - sends tracking details back to GAnalytics after lightbox close to let it know the user is back on page
     return lightbox;
   };
 

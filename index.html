@@ -14,7 +14,6 @@
       <meta name="generator" content="Webflow">
       <link rel="stylesheet" type="text/css" href="./index_files/enders-game-poster.css">
       <script src="./index_files/webfont.js"></script>
-      <script src="jquery.scrolldepth.min.js"></script>
       <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic">
       <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic">               <script>WebFont.load({
          google: {
@@ -25,20 +24,6 @@
       <script type="text/javascript" src="./index_files/modernizr-2.7.1.js"></script>
       <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/558e073a777d78fc7ddcd6a1/558fa57977ce56cf3faf262f_32x32-logo-emblem.png">
       <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/558e073a777d78fc7ddcd6a1/558fa5c177ce56cf3faf2632_300x300-Postertext-Logo---stack.png">
-	  <script>
-      jQuery(function() {
-          jQuery.scrollDepth(
-              {elements: ['#for-fans',
-                            '#legible-text',
-                            '#book-coverage',
-                            '#true-to-novel',
-                            '#featured-in',
-                            '#testimonials',
-                            '#buy-bottom',
-                            '#about']}
-          );
-      });
-      </script>
       <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -314,8 +299,22 @@
          </div>
       </div>
       <script type="text/javascript" src="./index_files/jquery.min.js"></script>
+      <script type="text/javascript" src="./index_files/jquery.scrolldepth.min.js"></script>
       <script type="text/javascript" src="./index_files/webflow.js"></script>
       <script type="text/javascript" src="./index_files/modalwindow.js"></script>
       <script type="text/javascript" src="./index_files/timer.js"></script>
+      <script>
+          jQuery(function() {
+              jQuery.scrollDepth(
+                  {elements: ['#for-fans',
+                                '#legible-text',
+                                '#book-coverage',
+                                '#true-to-novel',
+                                '#featured-in',
+                                '#testimonials',
+                                '#buy-bottom',
+                                '#about']});
+          });
+      </script>
       <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </body></html>
